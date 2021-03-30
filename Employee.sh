@@ -32,3 +32,7 @@ case $empCheck in
                  ;;
 esac
 salary=$(( $empHrs * $empRatePerHr ))
+esac
+      salary=$(( $empHrs * $empRatePerHr ))
+      totalSalary=$(($totalSalary+$salary));
+done
