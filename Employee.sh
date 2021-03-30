@@ -1,4 +1,3 @@
-
 echo "Welcome to Employee Wage Computation Program"
 
 isPresent=1
@@ -15,7 +14,10 @@ then
      empHrs=8;
      salary=$(( $empHrs * $empRatePerHr ))
 elif [ $isPartTime -eq $randomCheck ]
+then
+     empHrs=4;
 else
-     echo "Employee is Absent"
     salary=0
+    empHrs=0;
 fi
+salary=$(( $empHrs * $empRatePerHr ))
